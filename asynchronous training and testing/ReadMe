@@ -1,1 +1,27 @@
+Environment:
 
+OS: Linux
+
+DL Framework: pytorch 0.4.0
+
+View Framework: tensorboardX
+
+Motivation: 
+
+As we know, if we serially do the process of training and testing, it will cost much time. Hence, I give an efficient solution here.
+
+Details:
+
+1. I create two process: one for testing and one for training
+
+2. Once we train the network after one epoch, we send a signal to the process of testing. And then the process of testing loads the state_dict of current model.
+
+3. After loading model parameters, the process of testing send a signal to the process of trainging in order to continue next epoch
+
+4. As aforementioned, the process of training and testing nearly goes parallely
+
+5. In addtion, we visualize the loss by tensorboardX in the main process.
+
+QA:
+
+Welcome to communicate with the solutions :-)
