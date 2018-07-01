@@ -49,7 +49,7 @@ class simDataLoader(object):
 
 		self.trainLoader = DataLoader(self.trainSet, batch_size=32, shuffle=True, num_workers=2)
 
-		self.testLoader = DataLoader(self.trainSet, batch_size=32, shuffle=True, num_workers=2)
+		self.testLoader = DataLoader(self.testSet, batch_size=32, shuffle=True, num_workers=2)
 
 	def getLoader(self):
 
