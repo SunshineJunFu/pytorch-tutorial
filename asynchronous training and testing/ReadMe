@@ -18,10 +18,10 @@ Details:
 
 3. After loading model parameters, the process of testing send a signal to the process of trainging in order to continue next epoch
 
-4. As aforementioned, the process of training and testing nearly goes parallely
+4. As aforementioned, the process of training and testing nearly goes parallelly
 
 5. In addtion, we visualize the loss by tensorboardX in the main process.
 
-QA:
+Others:
 
 Welcome to communicate with the solutions :-)
