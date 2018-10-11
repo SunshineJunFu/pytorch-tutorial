@@ -1,1 +1,8 @@
 
+image dataset downloadlink:
+
+
+
+run command:
+
+python Gan.py --dataset folder --dataroot datasetPath --cuda --ngpu 2 --niter 5000 --outf outputFile
