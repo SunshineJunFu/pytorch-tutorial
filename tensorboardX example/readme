@@ -3,6 +3,14 @@ image dataset downloadlink:
 
 https://www.dropbox.com/s/jiaf8i8jcr99ca3/images.zip?dl=0
 
+Reference Code:
+
+https://github.com/pytorch/examples/blob/master/dcgan/main.py
+
+Dataset provided by:
+
+https://github.com/oglandx/butterflies
+
 run command:
 
 python Gan.py --dataset folder --dataroot datasetPath --cuda --ngpu 2 --niter 5000 --outf outputFile
