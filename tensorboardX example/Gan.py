@@ -385,7 +385,7 @@ optimizerD = optim.Adam(netD.parameters(), lr=opt.lr, betas=(opt.beta1, 0.999))
 
 optimizerG = optim.Adam(netG.parameters(), lr=opt.lr, betas=(opt.beta1, 0.999))
 
-
+step_counter = 0
 
 for epoch in range(opt.niter):
 
@@ -489,7 +489,9 @@ for epoch in range(opt.niter):
 
             img = vutils.make_grid(fake)
 
-            writer.add_image('valid',img, i)
+            writer.add_image('valid',img, step_counter)
+            
+            step_counter += 1
 
 
 
